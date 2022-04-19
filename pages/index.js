@@ -5,7 +5,12 @@ const Index = () => {
       <MainLayout head={<title>Saptak De - Personal Portfolio</title>}
                   content={(
                     <div>
-                      <h1>Saptak`s Personal Website</h1>
+                      <div className="headings">
+
+                          <h1>Saptak`s Personal Website</h1>
+                          <h2 id="short-desc">Hello World!</h2>
+                            
+                      </div>
                     </div>
 
                   )}

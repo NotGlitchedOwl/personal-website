@@ -6,6 +6,9 @@ const MainLayout = ({head , content}) => {
             <Head>
                 {head}
             </Head>
+            <div className="navbar">
+                
+            </div>
             <div className="content">
                 {content}
             </div>

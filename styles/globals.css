@@ -4,9 +4,35 @@
   background : rgba(0  ,0 , 0, 0.3);
   border-left: solid red 5px;
   border-right: solid red 5px;
-  color : whitesmoke;
+  color :transparent;
   position:fixed;
   bottom: 0;
-  
-  
+}
+h2#short-desc {
+  color:rgba(198, 79, 79, 0.782)
+}
+
+.headings {
+  width:auto;
+  height:400px;
+  font-family: "PixelHour";
+  background-color: wheat;
+}
+
+.headings > h1   {
+  position:absolute;
+  top: 50px;
+  left:100px;
+}
+.headings > h2#short-desc {
+  position:absolute;
+  top : 120px;
+  left:100px;
+}
+
+
+
+@font-face {
+  font-family: "PixelHour";
+  src: url("../public/fnt/Pixelhour.ttf");
 }
