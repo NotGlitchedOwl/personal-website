@@ -12,8 +12,9 @@ const Index = () => {
                             
                       </div>
                     </div>
-
+                  
                   )}
+                  navs={["foo" , "bar"]}
       />
     </div>
   )

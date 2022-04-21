@@ -1,10 +1,10 @@
 body {
-  background:rgba(0, 0, 0, 0.86)
+  background:rgba(0, 0, 0, 0.97)
 }
 .info {
   margin:10px;
   width:97%;
-  background : rgba(0  ,0 , 0, 0.3);
+  background : rgba(165, 54, 54, 0.3);
   border-left: solid red 5px;
   border-right: solid red 5px;
   color :transparent;
@@ -12,24 +12,33 @@ body {
   bottom: 0;
 }
 h2#short-desc {
-  color:rgba(198, 79, 79, 0.782)
+  color:rgba(255, 255, 255, 0.782)
 }
 
 .headings {
   width:auto;
-  height:400px;
+  height:auto;
   font-family: "PixelHour";
+  text-align: center;
 }
-
-.headings > h1   {
-  position:absolute;
-  top: 50px;
-  left:100px;
+.headings > h1 {
+  color: rgb(158, 114, 82);
 }
-.headings > h2#short-desc {
-  position:absolute;
-  top : 120px;
-  left:100px;
+.navbar {
+    width:auto;
+    height: fit-content;
+    text-align:center;
+}
+.bars {
+  width:fit-content;
+    height:fit-content;
+    background-color:#4b7eeb;
+    font-family:Zcool , monospace;
+    display:inline-block;
+    padding:10px;
+    margin:5px;
+    color:rgb(241, 238, 232);
+    font-size:20px;
 }
 
 @font-face {
