@@ -8,7 +8,7 @@ body {
   border-left: solid red 5px;
   border-right: solid red 5px;
   color :transparent;
-  position:fixed;
+  position:relative;
   bottom: 0;
 }
 h2#short-desc {
@@ -32,15 +32,27 @@ h2#short-desc {
 .bars {
   width:fit-content;
     height:fit-content;
-    background-color:#4b7eeb;
+    background-image: url(../public/img/anim-square.png);
     font-family:Zcool , monospace;
     display:inline-block;
     padding:10px;
-    margin:5px;
+    margin:2px;
     color:rgb(241, 238, 232);
     font-size:20px;
 }
 
+
+.bars a:hover {
+  color:black !important;
+}
+.bars a:visited {
+  color:rgb(195, 5, 5);
+}
+#nav-ul {
+  display:flexbox;
+  align-items: center;
+  align-content: center;
+}
 @font-face {
   font-family: "PixelHour";
   src: url("../public/fnt/Pixelhour.ttf");

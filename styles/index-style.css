@@ -1,0 +1,30 @@
+.cont-head {
+    color:white;
+    text-align: center;
+}
+
+.cont-box {
+    width: fit-content;
+    height: fit-content;
+    max-width: 90%;
+    padding: 10px;
+    margin:auto;
+    background-color: aliceblue;
+    border: solid transparent 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    font-family: "Vonique";
+    font-weight: bolder;
+}
+.cont-head {
+    font-family:"Astral" ;
+}
+
+@font-face {
+    font-family: "Vonique";
+    src: url(../public/fnt/Vonique_64.ttf);
+}
+@font-face {
+    font-family: "Astral";
+    src: url(../public/fnt/Astral_Sisters.ttf);
+}

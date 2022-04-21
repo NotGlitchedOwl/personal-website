@@ -1,0 +1,15 @@
+[
+    {
+        "Intro" : {
+            "content" : "Hello World!!" ,
+            "has-image" : true ,
+            "img-href" : "/../public/img/anim-square.png" , 
+            "img-alt" : "Placeholder"
+        
+        } ,
+        "Hello!!" : {
+            "content" : "Hello World!!" ,
+            "has-image" : false
+        }
+    }
+]
