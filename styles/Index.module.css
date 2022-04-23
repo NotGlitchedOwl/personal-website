@@ -1,0 +1,76 @@
+.cont_box_dark {
+    width: fit-content;
+    height: fit-content;
+    max-width: 90%;
+    padding: 10px;
+    margin:auto;
+    background-color: aliceblue;
+    border: solid transparent 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    font-family: "Vonique";
+    font-weight: bolder;
+}
+.cont_box_light {
+    width: fit-content;
+    height: fit-content;
+    max-width: 90%;
+    padding: 10px;
+    margin:auto;
+    background-color: rgb(9, 32, 52);
+    border: solid transparent 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    font-family: "Vonique";
+    font-weight: bolder
+}
+.short_desc_light {
+    color:rgba(28, 20, 20, 0.782);
+    text-align:center;
+    font-family: "PixelHour";
+}
+
+.cont_head_light {
+  color :rgba(255, 0, 0, 0.782);
+  text-align: center;
+  font-family: "Astral";
+
+}
+.cont_head_dark {
+    color:rgb(255, 255, 255);
+    text-align:center;
+    font-family: "Astral";
+}
+  
+.short_desc_dark {
+    color:rgba(255, 255, 255, 0.782);
+    text-align:center;
+    font-family: "PixelHour"; 
+}
+  
+  .headings {
+    width:auto;
+    height:auto;
+    font-family: "PixelHour";
+    text-align: center;
+  }
+  .title_light {
+    color: rgb(60, 34, 15);
+    text-align: center;
+    font-family: "PixelHour";
+  }
+  .title_dark {
+      color:aliceblue;
+      text-align: center;
+      font-family: "PixelHour";
+  }
+
+
+@font-face {
+    font-family: "Vonique";
+    src: url(../public/fnt/Vonique_64.ttf);
+}
+@font-face {
+    font-family: "Astral";
+    src: url(../public/fnt/Astral_Sisters.ttf);
+}

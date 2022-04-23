@@ -1,0 +1,76 @@
+.wrapper_dark {
+  padding: 15px;
+  background-color:rgba(0, 0, 0, 0.552);
+  border:solid rgb(255, 9, 9) 10px;
+}
+.wrapper_light {
+  padding: 15px;
+  background-color: white;
+  border:solid rgb(0, 0, 0) 10px;
+}
+.info_dark {
+  margin:10px;
+  width:97%;
+  background : rgba(251, 4, 4, 0.3);
+  border-left: solid rgb(255, 0, 0) 5px;
+  border-right: solid rgb(255, 0, 0) 5px;
+  color :transparent;
+  position:relative;
+  bottom: 0;
+}
+
+.info_light {
+  margin:10px;
+  width:97%;
+  background : rgba(54, 93, 165, 0.3);
+  border-left: solid rgb(0, 0, 0) 5px;
+  border-right: solid rgb(0, 0, 0) 5px;
+  color :transparent;
+  position:relative;
+  bottom: 0;
+}
+
+.navbar {
+    width:auto;
+    height: fit-content;
+    text-align:center;
+}
+.bars_light {
+  width:fit-content;
+    height:fit-content;
+    background-image: url(../public/img/anim-square.png);
+    font-family:Zcool , monospace;
+    display:inline-block;
+    padding:10px;
+    margin:2px;
+    color:rgb(16, 11, 2);
+    font-size:20px;
+}
+.bars_dark {
+  width:fit-content;
+    height:fit-content;
+    background-image: url(../public/img/anim-square.png);
+    font-family:Zcool , monospace;
+    display:inline-block;
+    padding:10px;
+    margin:2px;
+    color:rgb(224, 219, 208);
+    font-size:20px;
+}
+
+
+.bars a:hover {
+  color:black !important;
+}
+.bars a:visited {
+  color:rgb(195, 5, 5);
+}
+.nav_ul {
+  display:flexbox;
+  align-items: center;
+  align-content: center;
+}
+@font-face {
+  font-family: "PixelHour";
+  src: url("../public/fnt/Pixelhour.ttf");
+}

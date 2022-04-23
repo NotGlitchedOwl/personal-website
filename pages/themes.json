@@ -1,0 +1,47 @@
+[
+    {
+        "global" : {
+            "dark" : {
+                "classes" : {
+                    "navbar" : "navbar_dark" ,
+                    "nav_bars" : "bars_dark" ,
+                    "info" : "info_dark" ,
+                    "bg" : "wrapper_dark"
+
+                } 
+
+            } , 
+            "light" : {
+                "classes" : {
+                    "navbar" : "navbar" ,
+                    "nav_bars" : "bars_light" ,
+                    "info" : "info_light" ,
+                    "bg" : "wrapper_light"
+
+                }
+            } 
+        } ,
+        "index.js" : {
+            "dark" : {
+            "classes" : {
+                "index-page-boxes" : "cont_box_dark",
+                "index-page-headings" : "cont_head_dark" ,
+                "title" : "title_dark" ,
+                "sub_title" : "short_desc_dark"
+
+            } 
+
+            
+        } ,
+            "light" : {
+                "classes" : {
+                    "index-page-boxes" : "cont_box_light",
+                    "index-page-headings" : "cont_head_light" ,
+                    "title" : "title_light" ,
+                    "sub_title" : "short_desc_light"
+                }
+        }
+    }
+
+    }
+]

@@ -1,20 +1,23 @@
-import MainLayout from "./templates/PrimaryLayout.js"
+import MainLayout , {classes}   from "./templates/PrimaryLayout.js"
 import IndexJson from "./index-info.json"
 import Image from "next/image"
+import indexStyles from "./../styles/Index.module.css"
+import { classPlacement } from "./api/utillities.js"
+
 const Index = () => {
-  let indexComps = indexDivs(IndexJson)
+  let indexComps = indexDivs(IndexJson)  
   return (
     <div>
       <MainLayout head={<title>Saptak De - Personal Portfolio</title>}
                   headings={(
-                    <div>
+                    <>
                       <div className="headings">
 
-                          <h1>Saptak`s Personal Website</h1>
-                          <h2 id="short-desc">Hello World!</h2>
+                          <h1 className={classPlacement(indexStyles , "title" , classes , false)}>Saptak`s Personal Website</h1>
+                          <h2 className={classPlacement(indexStyles , "sub_title" , classes , false)}>Hello World!</h2>
                             
                       </div>
-                    </div>
+                    </>
                   
                   )}
                   content = {(
@@ -24,9 +27,11 @@ const Index = () => {
                   )}
                   navs={[{"href": "/#" , "content" : "About Myself"} , {"href" : "/#" , "content" : "My Hobbies"} , {"href" : "/#" , "content" : "Blog Posts"} , 
                           {"href" : "/#" , "content" : "Stuff I Will Add Later"}  ]}
+                  
       />
     </div>
   )
+
 }
 
 function indexDivs(json) {
@@ -36,9 +41,9 @@ function indexDivs(json) {
   for (let i=0; i < jsonKeys.length; i++ ) {
     if (JSON_FILE[0][jsonKeys[i]]["has-image"]) {
       indexDivComps.push(
-        <div key = {Math.floor(Math.random() * 1000000)}>  
-          <h1 className="cont-head" key={Math.floor(Math.random() * 1000000)}>{(i+1) + "." + jsonKeys[i]}</h1>
-          <div className="cont-box" key={Math.floor(Math.random() * 1000000)}>
+        <div key = {Math.floor(Math.random() * 1000000)} className="index-cont-wrapper">  
+          <h1 className={classPlacement(indexStyles , "index-page-headings" , classes , false)} key={Math.floor(Math.random() * 1000000)}>{(i+1) + "." + jsonKeys[i]}</h1>
+          <div className={classPlacement(indexStyles , "index-page-boxes" , classes , false)} key={Math.floor(Math.random() * 1000000)}>
             <p key={Math.floor(Math.random() * 1000000)}>
               {JSON_FILE[0][jsonKeys[i]]["content"]}
             </p>
@@ -48,9 +53,9 @@ function indexDivs(json) {
         )  
     } else {
       indexDivComps.push(
-        <div key = {Math.floor(Math.random() * 1000000)}>  
-          <h1 className="cont-head" key={Math.floor(Math.random() * 1000000)}>{(i+1) + "." + jsonKeys[i]}</h1>
-          <div className="cont-box" key={Math.floor(Math.random() * 1000000)}>
+        <div key = {Math.floor(Math.random() * 1000000)} className="index-cont-wrapper">  
+          <h1 className={classPlacement(indexStyles , "index-page-headings" , classes , false)} key={Math.floor(Math.random() * 1000000)}>{(i+1) + "." + jsonKeys[i]}</h1>
+          <div className={classPlacement(indexStyles , "index-page-boxes" , classes , false)} key={Math.floor(Math.random() * 1000000)}>
             <p key={Math.floor(Math.random() * 1000000)}>
               {JSON_FILE[0][jsonKeys[i]]["content"]}
             </p>
@@ -64,4 +69,5 @@ function indexDivs(json) {
   return indexDivComps
 
 }
+
 export default Index
