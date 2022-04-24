@@ -28,6 +28,7 @@ const Index = () => {
                   navs={[{"href": "/#" , "content" : "About Myself"} , {"href" : "/#" , "content" : "My Hobbies"} , {"href" : "/#" , "content" : "Blog Posts"} , 
                           {"href" : "/#" , "content" : "Stuff I Will Add Later"}  ]}
                   
+                  darkModeFile={"index.js"}  
       />
     </div>
   )

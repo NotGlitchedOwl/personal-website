@@ -6,7 +6,8 @@
                     "navbar" : "navbar_dark" ,
                     "nav_bars" : "bars_dark" ,
                     "info" : "info_dark" ,
-                    "bg" : "wrapper_dark"
+                    "bg" : "wrapper_dark" ,
+                    "button" : "theme_button_dark"
 
                 } 
 
@@ -16,7 +17,8 @@
                     "navbar" : "navbar" ,
                     "nav_bars" : "bars_light" ,
                     "info" : "info_light" ,
-                    "bg" : "wrapper_light"
+                    "bg" : "wrapper_light" ,
+                    "button" : "theme_button_light"
 
                 }
             } 

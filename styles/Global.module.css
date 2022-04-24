@@ -1,6 +1,6 @@
 .wrapper_dark {
   padding: 15px;
-  background-color:rgba(0, 0, 0, 0.552);
+  background-color:rgba(0, 0, 0, 0.919);
   border:solid rgb(255, 9, 9) 10px;
 }
 .wrapper_light {
@@ -11,7 +11,7 @@
 .info_dark {
   margin:10px;
   width:97%;
-  background : rgba(251, 4, 4, 0.3);
+  background : rgba(33, 251, 4, 0.3);
   border-left: solid rgb(255, 0, 0) 5px;
   border-right: solid rgb(255, 0, 0) 5px;
   color :transparent;
@@ -22,7 +22,7 @@
 .info_light {
   margin:10px;
   width:97%;
-  background : rgba(54, 93, 165, 0.3);
+  background : rgba(0, 89, 255, 0.605);
   border-left: solid rgb(0, 0, 0) 5px;
   border-right: solid rgb(0, 0, 0) 5px;
   color :transparent;
@@ -58,12 +58,35 @@
     font-size:20px;
 }
 
+.theme_button_light {
+  color:black;
+  background-color: blue;
 
-.bars a:hover {
-  color:black !important;
 }
-.bars a:visited {
-  color:rgb(195, 5, 5);
+
+.theme_button_dark {
+  color : rgb(0, 0, 0);
+  background-color: white;
+}
+.headings_wrap {
+  text-align: center;
+  display: flexbox;
+  align-content: center;
+}
+.bars_light a:hover {
+  color:rgb(255, 0, 0) !important;
+}
+.bars_dark a:hover {
+  color: white !important;
+}
+
+.bars_light a:visited {
+  color:rgb(0, 0, 0) ;
+
+}
+
+.bars_dark a:visited {
+  color : rgb(0, 0, 0);
 }
 .nav_ul {
   display:flexbox;

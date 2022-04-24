@@ -7,7 +7,7 @@ import globalStyle from "../../styles/Global.module.css"
 import { useRouter } from "next/router"
 
 export let classes = [themesFile[0]["global"]["dark"]["classes"] , themesFile[0]["index.js"]["dark"]["classes"]]
-const MainLayout = ({head , headings , content , navs  }) => {
+const MainLayout = ({head , headings , content , navs   , darkModeFile}) => {
     const router = useRouter()
     const refreshData = () => router.replace(router.asPath)
     const [theme , changeTheme] = useState("dark")
@@ -16,9 +16,9 @@ const MainLayout = ({head , headings , content , navs  }) => {
             <Head>
                 {head}
             </Head>
-            <div className="headings-wrap">
+            <div className={globalStyle.headings_wrap}>
                 {headings}
-                <button className="theme_changer" onClick={() => {
+                <button className={classPlacement(globalStyle , "button" , classes , true)} onClick={() => {
                     if (theme == "dark") {
                         changeTheme("light")
                         
@@ -31,7 +31,7 @@ const MainLayout = ({head , headings , content , navs  }) => {
                         
                     }
                     classes[0] = themesFile[0]["global"][theme]["classes"]        
-                    classes[1] = themeJson(themesFile , theme , "index.js")
+                    classes[1] = themeJson(themesFile , theme , darkModeFile)
                     refreshData()
 
                 }}>Change Theme</button>
@@ -47,7 +47,7 @@ const MainLayout = ({head , headings , content , navs  }) => {
             <br/>
             <br/>
             <br/>
-            <div className="info">
+            <div className={classPlacement(globalStyle , "info" , classes , true)}>
                 <p>hello</p>
             </div>
         </div>

@@ -10,6 +10,7 @@
     word-wrap: break-word;
     font-family: "Vonique";
     font-weight: bolder;
+    color: black;
 }
 .cont_box_light {
     width: fit-content;
@@ -17,12 +18,13 @@
     max-width: 90%;
     padding: 10px;
     margin:auto;
-    background-color: rgb(9, 32, 52);
+    background-color: rgb(0, 0, 0);
     border: solid transparent 10px;
     border-radius: 5px;
     word-wrap: break-word;
     font-family: "Vonique";
-    font-weight: bolder
+    font-weight: bolder;
+    color:white;
 }
 .short_desc_light {
     color:rgba(28, 20, 20, 0.782);
